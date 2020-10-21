@@ -49,7 +49,8 @@ async function main() {
     console.log(buffer);
   });
 
-  await wait(10 * 1000);
+  // 等 30s,可以 ctrl+C 关掉
+  await wait(30 * 1000);
 
   await characteristic2.stopNotifications();
 
